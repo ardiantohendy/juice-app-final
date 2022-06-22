@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Orange_activity"
+    android:background="@drawable/orange">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgBlack">
+
+        <TextView
+            android:id="@+id/titleGrape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/juicePng"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="serif"
+            android:text="@string/orange_juice"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/juicePng"
+            android:layout_width="169dp"
+            android:layout_height="187dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/juice"
+            app:tint="@color/white"
+            android:contentDescription="TODO"/>
+
+        <TextView
+            android:id="@+id/txtExplainOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/juicePng"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="serif"
+            android:text="@string/orange_explain"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnBuy"
+            style="@style/default_button"
+            android:layout_below="@+id/txtExplainOrange"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:fontFamily="serif"
+            android:text="Order Now" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

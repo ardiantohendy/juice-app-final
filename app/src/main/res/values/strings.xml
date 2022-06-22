@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">fruitApp</string>
+    <string name="the_juice">The Juice</string>
+    <string name="description">We provide a variety\nof fresh juices with\nvarious flavors, get \nfresh juice easily</string>
+    <string name="explain">We provide a variety of fresh juices with\nvarious flavors, get fresh juice easily \nand it\'s healthy as well</string>
+    <string name="blackcurrant">GRAPE</string>
+    <string name="our_flavors">Our Juice Variant:</string>
+    <string name="orange">ORANGE</string>
+    <string name="apple">APPLE</string>
+    <string name="grape_explain">The grapes we use are fresh and quality grapes from our garden so as to produce the best tasting juices</string>
+    <string name="orange_explain">The Oranges we use are fresh and quality grapes from our garden so as to produce the best tasting juices</string>
+    <string name="orange_juice">ORANGE JUICE</string>
+    <string name="apple_juice">APPLE JUICE</string>
+    <string name="apple_explain">The Apples we use are fresh and quality grapes from our garden so as to produce the best tasting juices</string>
+</resources>

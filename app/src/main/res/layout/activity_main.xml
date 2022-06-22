@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgBlack"
+        tools:layout_editor_absoluteX="-137dp"
+        tools:layout_editor_absoluteY="-96dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:fontFamily="@font/calligraffitti"
+            android:text="@string/the_juice"
+            android:textColor="@color/white"
+            android:textSize="80sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/explain"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:fontFamily="serif"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.006" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/our_flavors"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.825" />
+
+        <Button
+            style="@style/default_button"
+            android:layout_marginTop="28dp"
+            android:fontFamily="serif"
+            android:text="See All Product"
+            android:id="@+id/showDetail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.366"
+            tools:ignore="MissingConstraints,ScrollViewCount">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+                <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:id="@+id/cardGrape"
+                    android:layout_width="150dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="6dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/bgBlack"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/bgCardGrape">
+
+                        <ImageView
+                            android:id="@+id/imgGrape"
+                            android:layout_width="match_parent"
+                            android:layout_height="210dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/anggur" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imgGrape"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="7dp"
+                            android:fontFamily="serif"
+                            android:text="@string/blackcurrant"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+                <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:id="@+id/cardOrange"
+                    android:layout_width="150dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="6dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/bgBlack"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/bgCardOrange">
+
+                        <ImageView
+                            android:id="@+id/imgOrange"
+                            android:layout_width="match_parent"
+                            android:layout_height="210dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/orange" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imgOrange"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="7dp"
+                            android:fontFamily="serif"
+                            android:text="@string/orange"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+                <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:id="@+id/cardApple"
+                    android:layout_width="150dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="6dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/bgBlack"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/bgCardApple">
+
+                        <ImageView
+                            android:id="@+id/imgApple"
+                            android:layout_width="match_parent"
+                            android:layout_height="210dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/apple" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imgApple"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="7dp"
+                            android:fontFamily="serif"
+                            android:text="@string/apple"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+                <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:id="@+id/cardOrange2"
+                    android:layout_width="150dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="6dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/bgBlack"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/bgCardOrange2">
+
+                        <ImageView
+                            android:id="@+id/imgOrange2"
+                            android:layout_width="match_parent"
+                            android:layout_height="210dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/orange2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imgOrange2"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="7dp"
+                            android:fontFamily="serif"
+                            android:text="@string/orange"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
